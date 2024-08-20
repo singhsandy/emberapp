@@ -1,0 +1,21 @@
+<div class="d-flex user-login justify-content-center align-items-center mt-5">
+<section>
+    <div class="col">
+        <div class="text-center">
+            <h4>Login</h4>
+        </div>
+        <div class="row">
+            <input type="text" {{on "input" this.saveUserName }} placeholder="User name">
+        </div>
+        <div class="row mt-3">
+            <input type="password" {{on "input" this.savePassword }} placeholder="Password">
+        </div>
+        <LinkTo @route="product-list">
+            <div class="row mt-3">
+                <button class="bth btn-primary btn-block rounded" type="button" {{on "click" this.storeUserDeatils }}>Submit</button>    
+            </div>
+        </LinkTo>
+
+    </div>
+</section>
+</div>
